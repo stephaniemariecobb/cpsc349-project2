@@ -1,3 +1,6 @@
+---
+layout: myheader
+---
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,7 +10,23 @@
         <link rel="stylesheet" href="{{ '/styles/tailwind.css' | url }}">
         <link rel="stylesheet" href="{{ '/styles/main.css' | url }}">
     </head>
-    <body>
-        {{ content }}
+    <body style="background-color:{{color_keyword}}">
+
+        {{content}}
+        
+        {% unless page.url == '/' %}
+            <p><b>Photograph Information</b></p>
+            A {{photo_keyword}} photo by {{photographer_first_name}}{% unless photographer_last_name == "" %} {{photographer_last_name}}{% endunless %}.<br>
+            <a href = "{{photo_url}}">{{photo_url}}</a><br>
+            {% unless photo_location_name == "" %}
+            Photo taken at {{photo_location_name}}.<br>
+            {% endunless %}
+            {% unless photo_submitted_at == "" %}
+            Date of Creation: {{photo_submitted_at}}<br>
+            {% endunless %}
+            {% unless exif_camera_model == "" %}
+            Camera Model: {{exif_camera_model}}
+            {% endunless %}
+        {% endunless %}
     </body>
 </html>

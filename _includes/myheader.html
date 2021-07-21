@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cute Pet Photos</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="{{ '/styles/tailwind.css' | url }}">
+        <link rel="stylesheet" href="{{ '/styles/main.css' | url }}">
+    </head>
+
+    <body>
+        <header>
+        <h1><b>Cute Pet Photos</b></h1>
+        <img src ="/logo.jpeg" alt="Cute Pet Photos">
+        <nav>
+            
+            <b><a href="/">Home</a></b>
+            <b><a href="/aboutUs">About Us</a></b>
+            <b><a href="https://github.com/ryan-broguiere/cpsc349-project2">Contact</a></b>
+    
+        </nav>
+        </header>
+
+        {{content}}
+
+        <footer>
+           
+            <p>
+                <b>CS 349 Project 2</b><br>
+            </p>
+        
+            <p>
+                Photo Credit:
+                <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                    Unsplash.com 
+                </a><br>
+            </p>
+        
+            <p>
+                <a href="https://github.com/ryan-broguiere/cpsc349-project1">
+                    Github Link
+                </a><br>
+            </p>
+        
+            <p>
+                <a href="https://unsplash.com/license">
+                    Copyright Policy
+                </a>
+            </p>
+
+        </footer>
+    </body>
+</html>
