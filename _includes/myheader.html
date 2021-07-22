@@ -11,37 +11,36 @@
     </head>
 
     <body>
-        <header>
-        <h1><b>Cute Pet Photos</b></h1>
+        <div class="logo">
         <img src ="/logo.jpeg" alt="Cute Pet Photos">
+        <h1><b>Cute Pet Photos</b></h1>
+        </div>
+
+
         <nav>
-            
-            <b><a href="/">Home</a></b>
-            <b><a href="/aboutUs">About Us</a></b>
-            <b><a href="https://github.com/ryan-broguiere/cpsc349-project2">Contact</a></b>
-    
+            <b><a href="/">🏠Home</a></b>
+            <b><a href="/aboutUs">✌️About Us</a></b>
+            <b><a href="https://github.com/ryan-broguiere/cpsc349-project2">📝Contact</a></b>
+            <ul>
+            <div>
+                <button><a href ="/paginate">1-10</a></button>
+                <button><a href ="/paginate/1">11-20</a></button>
+                <button><a href ="/paginate/2">21-30</a></button>
+                <button><a href ="/paginate/3">31-40</a></button>
+                <button><a href ="/paginate/4">41-50</a></button>
+                <button><a href ="/paginate/5">51-60</a></button>
+                <button><a href ="/paginate/6">61-70</a></button>
+                <button><a href ="/paginate/7">71-80</a></button>
+                <button><a href ="/paginate/8">81-90</a></button>
+                <button><a href ="/paginate/9">91-100</a></button>
+            </div>
+            </ul>     
         </nav>
-        </header>
 
         {{content}}
 
         <footer>
-            <nav>
-                <ul>
-                <h2>Pages<h2>
-                <li><a href ="/paginate">(1-10)</a></li>
-                <li><a href ="/paginate/1">(11-20)</a></li>
-                <li><a href ="/paginate/2">(21-30)</a></li>
-                <li><a href ="/paginate/3">(31-40)</a></li>
-                <li><a href ="/paginate/4">(41-50)</a></li>
-                <li><a href ="/paginate/5">(51-60)</a></li>
-                <li><a href ="/paginate/6">(61-70)</a></li>
-                <li><a href ="/paginate/7">(71-80)</a></li>
-                <li><a href ="/paginate/8">(81-90)</a></li>
-                <li><a href ="/paginate/9">(91-100)</a></li>
-                </ul>        
-            </nav>
-           
+            <div class="foot">
             <p>
                 <b>CS 349 Project 2</b><br>
             </p>
@@ -64,7 +63,7 @@
                     Copyright Policy
                 </a>
             </p>
-
+            </div>
         </footer>
     </body>
 </html>
