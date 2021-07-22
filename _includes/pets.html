@@ -50,6 +50,7 @@ layout: myheader
         {{content}}
 
         {% unless page.url == '/' %}
+        <div class="description">
             <b>Photograph Information</b><br>
             A {{photo_keyword}} photo by {{photographer_first_name}}{% unless photographer_last_name == "" %} {{photographer_last_name}}{% endunless %}.<br>
             <a href = "{{photo_url}}">{{photo_url}}</a><br>
@@ -62,6 +63,7 @@ layout: myheader
             {% unless exif_camera_model == "" %}
                 Camera Model: {{exif_camera_model}}
             {% endunless %}
+        </div>
         {% endunless %}
 
         {% if page.url == '/' %}
