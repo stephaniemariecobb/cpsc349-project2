@@ -10,13 +10,14 @@ layout: myheader
         <link rel="stylesheet" href="{{ '/styles/main.css' | url }}">
         <link rel="stylesheet" href="{{ '/styles/flexbox.css' | url }}">
         <link rel="stylesheet" href="{{ '/styles/grid.css' | url }}">
+        <link href="styles/flexbox.css" rel="stylesheet" type="text/css" />
     </head>
     <style>
             :root {
                 --red: {{red}};
                 --green: {{green}};
                 --blue: {{blue}};
-            
+
                 --accessible-color: calc(
                     (
                         (
@@ -31,7 +32,7 @@ layout: myheader
             }
 
         body {
-            color: 
+            color:
                 rgb(
                     var(--accessible-color),
                     var(--accessible-color),
@@ -65,9 +66,9 @@ layout: myheader
         {% endunless %}
 
         {% if page.url == '/' %}
-        <ol>
+        <ol class="pag">
             {% for photo in collections.photos %}
-                <li>
+                <li class="pagItem">
                     <a href="{{ photo.url | url }}">
                         A {{ photo.data.photo_keyword }} photo
                         by {{ photo.data.photographer_first_name}} {{ photo.data.photographer_last_name }}
