@@ -1,3 +1,37 @@
+@media (min-width: 600px) {
+  .pag {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.button-alignment {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.foot {
+  background: #4da5a5;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  flex-direction: column;
+  color: black;
+}
+
+.head {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.logo {
+  background: #4da5a5;
+  text-align: center;
+  padding: 30px;
+  font-size: 40px;
+  color: black;
+}
+
 .pag {
   /*background-color: gray;*/
   flex-wrap: wrap;
@@ -14,39 +48,17 @@
   margin: auto;
 }
 
-@media (min-width: 600px) {
-  .pag {
-    display: flex;
-    justify-content: space-between;
-  }
+a {
+  color: blue;
 }
 
-.logo {
-  background: #4da5a5;
-  text-align: center;
-  padding: 30px;
-  font-size: 40px;
-  color: black;
+a:hover {
+  color: hotpink;
+  text-decoration: underline;
 }
 
-.head {
-  padding: 10px;
-  font-size: 20px;
-}
-
-.foot {
-  background: #4da5a5;
-  text-align: center;
-  padding: 10px;
-  font-size: 20px;
-  flex-direction: column;
-  color: black;
-}
-
-div {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+a:visited {
+  color: purple;
 }
 
 button {
@@ -58,18 +70,21 @@ button {
   border-radius: 10px;
 }
 
-a {
-  color: blue;
-}
-
-a:hover {
-  color: yellow;
-  text-decoration: underline;
-}
-
-.center {
+div {
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: gray;
+  justify-content: space-around;
+}
+
+header {
+  margin: auto;
+  height: 50px;
+  padding: 25px;
+  text-align: center;
+  margin: 0;
+}
+
+hr.solidblack {
+  border-top: solid black;
+  border-radius: 5px;
 }
