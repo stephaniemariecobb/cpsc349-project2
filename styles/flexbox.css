@@ -23,6 +23,7 @@
 .head {
   font-size: 20px;
   padding: 10px;
+  background: pink;
 }
 
 .pag {
@@ -80,12 +81,23 @@ div.logo {
   color: black;
 }
 
+mainHeader {
+  margin: auto;
+  height: 50px;
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
 header {
   margin: auto;
   height: 50px;
   padding: 25px;
   text-align: center;
   margin: 0;
+  font-weight: bold;
 }
 
 hr.solidblack {
@@ -95,4 +107,9 @@ hr.solidblack {
 
 naviItem {
   padding-right: 30px;
+}
+
+p {
+  padding-left: 100px;
+  padding-right: 100px;
 }
