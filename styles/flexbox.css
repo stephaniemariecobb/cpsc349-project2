@@ -8,6 +8,7 @@
 .button-alignment {
   text-align: center;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .foot {
@@ -22,14 +23,6 @@
 .head {
   font-size: 20px;
   padding: 10px;
-}
-
-.logo {
-  background: #4da5a5;
-  text-align: center;
-  padding: 30px;
-  font-size: 40px;
-  color: black;
 }
 
 .pag {
@@ -76,6 +69,17 @@ div {
   justify-content: space-around;
 }
 
+div.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #4da5a5;
+  text-align: center;
+  padding: 30px;
+  font-size: 40px;
+  color: black;
+}
+
 header {
   margin: auto;
   height: 50px;
@@ -87,4 +91,8 @@ header {
 hr.solidblack {
   border-top: solid black;
   border-radius: 5px;
+}
+
+naviItem {
+  padding-right: 30px;
 }
