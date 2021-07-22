@@ -50,7 +50,7 @@ layout: myheader
         {{content}}
 
         {% unless page.url == '/' %}
-            <p><b>Photograph Information</b></p>
+            <b>Photograph Information</b><br>
             A {{photo_keyword}} photo by {{photographer_first_name}}{% unless photographer_last_name == "" %} {{photographer_last_name}}{% endunless %}.<br>
             <a href = "{{photo_url}}">{{photo_url}}</a><br>
             {% unless photo_location_name == "" %}

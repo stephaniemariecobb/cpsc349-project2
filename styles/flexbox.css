@@ -6,9 +6,16 @@
 }
 
 .button-alignment {
-  text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.description {
+  padding: 10px;
+  border: 1px solid black;
 }
 
 .foot {
@@ -62,12 +69,6 @@ button {
   background-color: rgb(221, 214, 214);
   border: 1px solid black;
   border-radius: 10px;
-}
-
-div {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
 }
 
 div.logo {
