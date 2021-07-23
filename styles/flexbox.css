@@ -76,7 +76,7 @@ button {
 div.logo {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   background: #4da5a5;
   text-align: center;
@@ -93,6 +93,10 @@ mainHeader {
   font-weight: bold;
   font-size: 20px;
   text-decoration: underline;
+}
+
+h1logo {
+  padding-left: 30px;
 }
 
 header {
