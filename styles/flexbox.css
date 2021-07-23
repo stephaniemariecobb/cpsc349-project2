@@ -17,7 +17,8 @@
   width: 50%;
   margin: 20px auto;
   padding: 10px;
-  border: 2px solid black;
+  border: 2px solid white;
+  outline: 2px solid black;
 }
 
 .foot {
