@@ -5,6 +5,24 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .button-alignment {
+    flex-direction: column;
+  }
+  .pagButton {
+    font-size: 3px;
+  }
+}
+
+.pagButton {
+  font-size: 2vw;
+  line-height: 1.5;
+  width: 8%;
+  background-color: rgb(221, 214, 214);
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
 .button-alignment {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -64,15 +82,6 @@ a:hover {
 
 a:visited {
   color: purple;
-}
-
-button {
-  font-size: 18px;
-  line-height: 1.5;
-  width: 8%;
-  background-color: rgb(221, 214, 214);
-  border: 1px solid black;
-  border-radius: 10px;
 }
 
 div.logo {
